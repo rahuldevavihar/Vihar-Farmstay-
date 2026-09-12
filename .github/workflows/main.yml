@@ -91,7 +91,7 @@ jobs:
               compileSdk 35
 
               defaultConfig {
-                  applicationId "com.viharfarmstay.app"
+                  applicationId "com.skilledviharifarmstay.app"
                   minSdk 23
                   targetSdk 35
                   versionCode 1
@@ -121,7 +121,7 @@ jobs:
 
               <application
                   android:allowBackup="true"
-                  android:label="VIHAR FARMSTAY"
+                  android:label="SKILLED VIHARI FARMSTAY"
                   android:supportsRtl="true"
                   android:theme="@style/AppTheme">
 
@@ -222,10 +222,10 @@ jobs:
         run: |
           mkdir -p output
           cp android/app/build/outputs/apk/debug/app-debug.apk \
-             output/VIHAR-FARMSTAY.apk
+             output/SKILLED-VIHARI-FARMSTAY.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: VIHAR-FARMSTAY-APK
-          path: output/VIHAR-FARMSTAY.apk
+          name: SKILLED-VIHARI-FARMSTAY-APK
+          path: output/SKILLED-VIHARI-FARMSTAY.apk
