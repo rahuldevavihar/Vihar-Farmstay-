@@ -87,7 +87,7 @@ jobs:
           }
 
           android {
-              namespace "com.viharfarmstay.app"
+              namespace "com.skilledviharifarmstay.app"
               compileSdk 35
 
               defaultConfig {
