@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SKILLED VIHARI FARMSTAY</title>
+<meta name="theme-color" content="#073b78"><meta name="description" content="SKILLED VIHARI FARMSTAY — direct-from-farm agricultural wholesale, farmstay accommodation and tour services across Bihar, Jharkhand and West Bengal.">
+<style>
+:root{--ink:#15233a;--blue:#073b78;--blue2:#0d5ab1;--gold:#f4a51c;--green:#16864a;--cream:#fff8e8;--line:#dfe6ef;--shadow:0 10px 30px rgba(0,0,0,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}
+.top{background:#052b59;color:#fff;padding:9px 5%;display:flex;gap:25px;justify-content:center;flex-wrap:wrap;font-size:13px}
+.nav{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 3px 15px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:space-between;padding:12px 5%;gap:15px}
+.brand{display:flex;align-items:center;gap:10px;min-width:250px}
+.logo{width:44px;height:44px;border-radius:50%;background:#073b78;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand b{display:block;font-size:16px;color:#073b78}
+.brand small{display:block;color:#64748b;font-size:10px;margin-top:3px}
+.links{display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:11px;font-weight:800;color:#334155}
+.links a:hover{color:#0d5ab1}
+.cta,.btn{display:inline-block;background:#f4a51c;color:#111;padding:12px 20px;border-radius:8px;font-weight:800;border:0;cursor:pointer}
+.cta{white-space:nowrap}
+.hero{min-height:650px;background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.3)),url('https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_b/banka/mandar_hill/nature_banka_category_b_mandar_hill_pic_02.jpg') center/cover;display:flex;align-items:center;color:#fff}
+.hero-inner{width:min(1100px,90%);margin:auto;padding:80px 0}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:2px;color:#f4a51c;margin-bottom:12px}
+.hero h1{font-size:58px;line-height:1.05;max-width:850px;margin:0 0 20px}
+.hero h1 span{color:#f4a51c}
+.hero p{font-size:18px;line-height:1.7;max-width:800px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn.dark{background:#fff;color:#073b78}
+.btn.green{background:#16864a;color:#fff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:#073b78;color:#fff}
+.stat{padding:25px;text-align:center;border-right:1px solid rgba(255,255,255,.15)}
+.stat strong{display:block;font-size:18px;color:#f4a51c;margin-bottom:7px}
+.stat span{font-size:12px;color:#dce8f7}
+.section{padding:70px 5%;max-width:1250px;margin:auto}
+.center{text-align:center;max-width:850px;margin:0 auto 35px}
+.section h2{font-size:38px;margin:8px 0 15px}
+.lead{color:#5b6b80;line-height:1.7}
+.product-grid,.plans,.tour-grid,.rules,.contact-grid{display:grid;gap:22px}
+.product-grid{grid-template-columns:repeat(3,1fr)}
+.card,.plan,.tour-card,.rule,.contact-card,.booking-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:25px;box-shadow:var(--shadow)}
+.card h3,.plan h3,.contact-card h3{color:#073b78}
+.card p,.plan p,.tour-card p,.contact-card p{line-height:1.6;color:#5b6b80}
+.offerbox{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:25px}
+.offer{background:#fff8e8;border-left:5px solid #f4a51c;padding:20px;border-radius:10px}
+.plans{grid-template-columns:repeat(3,1fr)}
+.plan .days{font-size:13px;font-weight:900;color:#16864a}
+.price{font-size:28px;font-weight:900;color:#073b78}
+.location-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.location{background:#f7fbff;border:1px solid var(--line);border-radius:14px;padding:22px}
+.location h3{margin-top:0;color:#073b78}
+.tour-section{max-width:none;background:#f7fbff}
+.tour-section>.center,.tour-section>.filters,.tour-section>.tour-grid,.tour-section>.selection-bar,.tour-section>.notice{max-width:1250px;margin-left:auto;margin-right:auto}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:25px}
+.filter{border:1px solid #b8c5d5;background:#fff;padding:9px 15px;border-radius:20px;font-weight:800;cursor:pointer}
+.filter.active{background:#073b78;color:#fff}
+.tour-grid{grid-template-columns:repeat(4,1fr)}
+.tour-card{padding:0;overflow:hidden}
+.tour-card img{width:100%;height:190px;object-fit:cover;display:block}
+.tour-card-body{padding:18px}
+.tour-card h3{font-size:17px;margin:0 0 8px;color:#073b78}
+.tour-card small{color:#16864a;font-weight:800}
+.tour-card button{width:100%;margin-top:12px}
+.selection-bar{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);padding:18px;border-radius:12px;margin-top:25px}
+.notice{background:#fff8e8;padding:15px;border-radius:8px;margin-top:20px;color:#5b4a1d}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about img{width:100%;border-radius:18px;box-shadow:var(--shadow)}
+.about p{line-height:1.8;color:#5b6b80}
+.contact-grid{grid-template-columns:repeat(3,1fr)}
+.contact-card a{color:#073b78;font-weight:800}
+.booking{background:#f7fbff;max-width:none}
+.booking-wrap{max-width:1000px;margin:auto}
+.booking-card{background:#fff}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:13px;font-weight:800}
+.field input,.field select,.field textarea{padding:12px;border:1px solid #cbd5e1;border-radius:8px;font:inherit}
+.field textarea{min-height:110px;resize:vertical}
+.calc{background:#f7fbff;border:1px solid var(--line);border-radius:12px;padding:20px;margin:20px 0}
+.calc-row{display:flex;justify-content:space-between;padding:7px 0}
+.calc-row.total{font-size:20px;font-weight:900;color:#073b78;border-top:1px solid var(--line);margin-top:8px;padding-top:15px}
+.footer{background:#052b59;color:#fff;padding:45px 5% 20px}
+.footer-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:25px}
+.footer h3{color:#f4a51c}
+.footer p{color:#cbd8e8;line-height:1.7}
+.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.15);margin-top:30px;padding-top:20px;color:#9fb2c9;font-size:12px}
+@media(max-width:900px){
+.links{display:none}
+.stats,.product-grid,.plans,.tour-grid,.location-grid,.contact-grid,.footer-grid{grid-template-columns:1fr 1fr}
+.about{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+.hero{min-height:600px}
+.stats,.product-grid,.plans,.tour-grid,.location-grid,.contact-grid,.footer-grid{grid-template-columns:1fr}
+.form-grid{grid-template-columns:1fr}
+.field.full{grid-column:auto}
+.selection-bar{display:block}
+.selection-bar .btn{margin-top:10px}
+.hero h1{font-size:47px}
+.section h2{font-size:31px}
+.brand b{font-size:14px}
+.brand small{font-size:9px}
+.cta{padding:9px 12px;font-size:12px}
+.offerbox{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+<span>📞 +91 7762918733</span>
+<span>✉ devarahul111@gmail.com</span>
+<span>📍 Suiya, Chandan, Banka, Bihar, India • Deoghar–Sultanganj Road (SH-22)</span>
+</div>
+
+<nav class="nav">
+<a class="brand" href="#home">
+<div class="logo">BV</div>
+<div>
+<b>SKILLED VIHARI FARMSTAY</b>
+<small>International Farmstay & Free Tour Experiences</small>
+</div>
+</a>
+
+<div class="links">
+<a href="#farmstay-products">FARMSTAY PRODUCTS</a>
+<a href="#farmstay-locations">FARMSTAYS</a>
+<a href="#plans">FARMSTAY PLANS</a>
+<a href="#about">ABOUT</a>
+<a href="#tours">TOUR BUSINESS</a>
+<a href="#contact">CONTACT</a>
+<a href="#booking">BOOKING</a>
+</div>
+
+<a class="cta" href="#farmstay-products">Order Now</a>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="eyebrow">FARM TO WHOLESALE • DIRECT SOURCING</div>
+<h1>Fresh <span>Agricultural Products</span> Direct From Farmers’ Fields</h1>
+<p>SKILLED VIHARI FARMSTAY connects wholesale buyers with agricultural and food products sourced directly from farmers. Enquire for bulk quantities, seasonal availability and farm-to-buyer supply.</p>
+<div class="hero-buttons">
+<a class="btn" href="#farmstay-products">Order Now</a>
+<a class="btn dark" href="#plans">View Farmstay</a>
+</div>
+</div>
+</section>
+
+<div class="stats">
+<div class="stat"><strong>Direct Farm</strong><span>Source-to-buyer agricultural supply</span></div>
+<div class="stat"><strong>Wholesale</strong><span>Bulk quantity enquiries welcome</span></div>
+<div class="stat"><strong>Seasonal</strong><span>Availability confirmed by farmers</span></div>
+<div class="stat"><strong>Farmstay</strong><span>Stay and experience rural farming</span></div>
+</div>
+
+<section class="section" id="farmstay-products">
+<div class="center">
+<div class="eyebrow">FARMSTAY PRODUCTS</div>
+<h2>Fresh Agricultural Products</h2>
+<p class="lead">Direct agricultural products sourced from farmers. Wholesale enquiries, seasonal availability and bulk orders are welcome.</p>
+</div>
+
+<div class="product-grid">
+<div class="card">
+<h3>🥥 Coconut</h3>
+<p>Fresh farm-sourced coconut for wholesale and bulk requirements.</p>
+</div>
+<div class="card">
+<h3>🌾 Agricultural Produce</h3>
+<p>Seasonal agricultural products sourced directly from farms.</p>
+</div>
+<div class="card">
+<h3>📦 Wholesale Supply</h3>
+<p>Bulk quantity enquiries for businesses, traders and institutional buyers.</p>
+</div>
+</div>
+
+<div class="offerbox">
+<div class="offer">
+<h3>Direct Farm Supply</h3>
+<p>Products are sourced directly from agricultural farms and availability is confirmed before dispatch.</p>
+</div>
+<div class="offer">
+<h3>Order Now</h3>
+<p>Send your product, quantity and location requirement through WhatsApp for confirmation.</p>
+<a class="btn" href="https://wa.me/917762918733?text=Hello%20SKILLED%20VIHARI%20FARMSTAY%2C%0A%0AI%20want%20to%20place%20an%20agricultural%20product%20order.">Order Now</a>
+</div>
+</div>
+</section>
+
+<section class="section" id="farmstay-locations">
+<div class="center">
+<div class="eyebrow">FARMSTAY LOCATIONS</div>
+<h2>Stay at Skilled Vihari Farmstay</h2>
+<p class="lead">Farmstay and local nature experiences around Banka and nearby destinations.</p>
+</div>
+
+<div class="location-grid">
+<div class="location"><h3>Chandan, Banka, Bihar</h3><p>Farmstay & local nature experience</p></div>
+<div class="location"><h3>Belhar, Banka, Bihar</h3><p>Farmstay & local nature experience</p></div>
+<div class="location"><h3>Bounsi, Banka, Bihar</h3><p>Farmstay & local nature experience</p></div>
+<div class="location"><h3>Odhni Dam, Banka, Bihar</h3><p>Farmstay & local nature experience</p></div>
+<div class="location"><h3>Vihar Farmstay – Mandar Hill, Banka, Bihar</h3><p>Farmstay & local nature experience</p></div>
+<div class="location"><h3>Chandan Dam, Bihar</h3><p>Farmstay & local nature experience</p></div>
+<div class="location"><h3>Belharni Dam, Bihar</h3><p>Farmstay & local nature experience</p></div>
+<div class="location"><h3>Bilasi Dam, Bihar</h3><p>Farmstay & local nature experience</p></div>
+<div class="location"><h3>Nagi–Nakti Bird Sanctuary, Bihar</h3><p>Farmstay & local nature experience</p></div>
+<div class="location"><h3>Odhni Dam, Bihar</h3><p>Farmstay & local nature experience</p></div>
+</div>
+</section>
+
+<section class="section" id="plans">
+<div class="center">
+<div class="eyebrow">FARMSTAY PLANS</div>
+<h2>Choose Your Farmstay Duration</h2>
+<p class="lead">Stay longer and explore more destinations with complimentary tour-site selections according to your plan.</p>
+</div>
+
+<div class="plans">
+<div class="plan"><div class="days">4 DAYS</div><h3>4 Days Farmstay</h3><div class="price">₹9,500</div><p>1 free tour site</p></div>
+<div class="plan"><div class="days">1 WEEK</div><h3>1 Week Farmstay</h3><div class="price">₹14,900</div><p>2 free tour sites</p></div>
+<div class="plan"><div class="days">2 WEEKS</div><h3>2 Weeks Farmstay</h3><div class="price">₹29,000</div><p>5 free tour sites</p></div>
+<div class="plan"><div class="days">3 WEEKS</div><h3>3 Weeks Farmstay</h3><div class="price">₹42,000</div><p>10 free tour sites</p></div>
+<div class="plan"><div class="days">4 WEEKS</div><h3>4 Weeks Farmstay</h3><div class="price">₹54,500</div><p>18 free tour sites</p></div>
+<div class="plan"><div class="days">5 WEEKS</div><h3>5 Weeks Farmstay</h3><div class="price">₹65,000</div><p>25 free tour sites</p></div>
+</div>
+
+<div class="offerbox">
+<div class="offer">
+<h3>Group Discount</h3>
+<p>2 persons — 10% discount</p>
+<p>3 persons — 15% discount</p>
+<p>4 persons — 20% discount</p>
+<p>5 persons — 25% discount</p>
+</div>
+<div class="offer">
+<h3>Tour Facility</h3>
+<p>Four-wheeler with driver-guide facility is available for tours.</p>
+<p>Fuel is an extra charge even for complimentary tours.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="about">
+<div class="about">
+<img src="https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_b/banka/mandar_hill/nature_banka_category_b_mandar_hill_pic_02.jpg" alt="Mandar Hill, Banka, Bihar — real photo">
+<div>
+<div class="eyebrow">ABOUT SKILLED VIHARI</div>
+<h2>Stay close to nature. Explore Eastern India.</h2>
+<p>SKILLED VIHARI FARMSTAY is based in Banka, Bihar, on the Deoghar–Sultanganj road. The experience combines farmstay hospitality with flexible sightseeing across Bihar, Jharkhand and West Bengal.</p>
+<p>Guests are not restricted to a single pre-defined tourist destination. They can choose preferred sites from the available tour catalogue according to the selected farmstay plan.</p>
+<p>Our objective is to connect rural farm experiences, accommodation, agricultural products and regional tourism in one platform.</p>
+</div>
+</div>
+</section>
+
+<section class="section tour-section" id="tours">
+<div class="center">
+<div class="eyebrow">FREE TOUR CATALOGUE</div>
+<h2>State-wise Destination Listing • Select Your Favourites</h2>
+<p class="lead">No mandatory destination is pre-selected. During booking, choose your preferred sites from the catalogue. Your allowed number of free-tour site selections depends on the plan and group size.</p>
+</div>
+
+<div class="filters">
+<button class="filter active" onclick="filterTours('all',this)">ALL</button>
+<button class="filter" onclick="filterTours('Bihar',this)">BIHAR</button>
+<button class="filter" onclick="filterTours('Jharkhand',this)">JHARKHAND</button>
+<button class="filter" onclick="filterTours('West Bengal',this)">WEST BENGAL</button>
+</div>
+
+<div class="tour-grid" id="tourGrid"></div>
+
+<div class="selection-bar">
+<div><span>Selected free-tour sites: </span><strong id="selectedCount">0</strong><span> / <strong id="allowedCount">1</strong></span></div>
+<button class="btn" onclick="goBooking()">Continue to Booking</button>
+</div>
+
+<p class="notice">Tour selection is subject to practical routing, opening hours, local conditions and confirmation. Entry tickets, meals, permits and other third-party costs are not included unless expressly confirmed. Fuel is extra.</p>
+</section>
+
+<section class="section" id="contact">
+<div class="center">
+<div class="eyebrow">CONTACT</div>
+<h2>Contact SKILLED VIHARI FARMSTAY</h2>
+<p class="lead">For farmstay bookings, agricultural products, wholesale enquiries and tour services.</p>
+</div>
+
+<div class="contact-grid">
+<div class="contact-card">
+<h3>📞 WhatsApp</h3>
+<p><a href="https://wa.me/917762918733">+91 7762918733</a></p>
+</div>
+<div class="contact-card">
+<h3>✉ Email</h3>
+<p><a href="mailto:devarahul111@gmail.com">devarahul111@gmail.com</a></p>
+</div>
+<div class="contact-card">
+<h3>📍 Address</h3>
+<p>Suiya, Chandan, Banka, Bihar, India<br>Deoghar–Sultanganj Road (SH-22)</p>
+</div>
+</div>
+</section>
+
+<section class="section booking" id="booking">
+<div class="center">
+<div class="eyebrow">BOOK YOUR FARMSTAY</div>
+<h2>Build Your Farmstay + Free Tour Booking</h2>
+<p class="lead">Choose your duration and number of guests. The calculator updates the booking amount, discount and complimentary-tour allowance.</p>
+</div>
+
+<div class="booking-wrap">
+<div class="booking-card">
+<h3>Booking Details</h3>
+
+<form onsubmit="sendBooking(event)">
+<div class="form-grid">
+
+<div class="field">
+<label>Full Name *</label>
+<input id="name" required>
+</div>
+
+<div class="field">
+<label>Mobile / WhatsApp *</label>
+<input id="phone" required>
+</div>
+
+<div class="field">
+<label>Farmstay Plan *</label>
+<select id="plan" onchange="updateCalc()">
+<option value="4|9500|1">4 Days — ₹9,500 — 1 free site</option>
+<option value="7|14900|2">1 Week — ₹14,900 — 2 free sites</option>
+<option value="14|29000|5">2 Weeks — ₹29,000 — 5 free sites</option>
+<option value="21|42000|10">3 Weeks — ₹42,000 — 10 free sites</option>
+<option value="28|54500|18">4 Weeks — ₹54,500 — 18 free sites</option>
+<option value="35|65000|25">5 Weeks — ₹65,000 — 25 free sites</option>
+</select>
+</div>
+
+<div class="field">
+<label>Number of Persons *</label>
+<select id="persons" onchange="updateCalc()">
+<option value="1">1 Person</option>
+<option value="2">2 Persons — 10% Discount</option>
+<option value="3">3 Persons — 15% Discount</option>
+<option value="4">4 Persons — 20% Discount</option>
+<option value="5">5 Persons — 25% Discount</option>
+</select>
+</div>
+
+<div class="field">
+<label>Check-in *</label>
+<input id="date" type="date" required>
+</div>
+
+<div class="field">
+<label>Check-out *</label>
+<input id="checkout" type="date" required>
+</div>
+
+<div class="field full">
+<label>Selected Tour Sites</label>
+<textarea id="sites" readonly placeholder="Select your preferred free-tour sites above."></textarea>
+</div>
+
+<div class="field full">
+<label>Additional Request</label>
+<textarea id="message" placeholder="Any special requirement..."></textarea>
+</div>
+
+</div>
+
+<div class="calc">
+<div class="calc-row"><span>Base Total</span><strong id="baseTotal">₹9,500</strong></div>
+<div class="calc-row"><span>Group Discount</span><strong id="discount">− ₹0</strong></div>
+<div class="calc-row"><span>Complimentary Tour Sites</span><strong id="tourAllowance">1</strong></div>
+<div class="calc-row total"><span>Indicative Total</span><strong id="grandTotal">₹9,500</strong></div>
+</div>
+
+<button class="btn green" type="submit">Send Booking Request on WhatsApp</button>
+
+<div class="notice">
+Please confirm payment method, identification requirements and any applicable taxes or fees before booking.
+</div>
+
+</form>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-grid">
+<div>
+<h3>SKILLED VIHARI FARMSTAY</h3>
+<p>Wholesale agricultural products sourced directly from farmers, plus farmstay accommodation and tour experiences.</p>
+</div>
+<div>
+<h3>Farmstay</h3>
+<p>4 Days<br>1 Week<br>2 Weeks<br>3 Weeks<br>4 Weeks<br>5 Weeks</p>
+</div>
+<div>
+<h3>Agri Wholesale</h3>
+<p>Direct farm sourcing<br>Bulk enquiries<br>Seasonal availability<br>Price & delivery confirmed before dispatch</p>
+</div>
+<div>
+<h3>Contact</h3>
+<p>+91 7762918733<br>devarahul111@gmail.com<br>Banka, Bihar, India</p>
+</div>
+</div>
+<div class="copyright">© 2026 SKILLED VIHARI FARMSTAY. All Rights Reserved.</div>
+</footer>
+
+<script>
+const tours=[
+['Bihar','Mahabodhi Temple, Bodh Gaya','Buddhist heritage & UNESCO World Heritage site','https://commons.wikimedia.org/wiki/Special:Redirect/file/Mahabodhitemple.jpg'],
+['Bihar','Vishnupad Temple, Gaya','Historic pilgrimage destination on the Phalgu River','https://commons.wikimedia.org/wiki/Special:Redirect/file/Vishnupad_Temple_Gaya.jpg'],
+['Bihar','Nalanda Mahavihara','Ancient university ruins and UNESCO World Heritage site','https://commons.wikimedia.org/wiki/Special:Redirect/file/Nalanda_Mahavihara.jpg'],
+['Bihar','Rajgir','Hills, ropeway, Gridhakuta and heritage circuit','https://commons.wikimedia.org/wiki/Special:Redirect/file/Shanti_Stupa_in_Rajgir%2C_Bihar%2C_India.jpg'],
+['Bihar','Vikramshila Mahavihara','Ancient Buddhist university ruins near Kahalgaon','https://commons.wikimedia.org/wiki/Special:Redirect/file/Vikramshila%2C_bhagalpur%28bihar%29.jpg'],
+['Bihar','Vaishali','Ancient Buddhist, Jain and Mauryan heritage','https://commons.wikimedia.org/wiki/Special:Redirect/file/Ashoka_pillar_vaishali.jpg'],
+['Bihar','Kesariya Stupa','Major Buddhist heritage monument in East Champaran','https://commons.wikimedia.org/wiki/Special:Redirect/file/Kesaria_Stupa.jpg'],
+['Bihar','Valmiki Tiger Reserve','Forest and wildlife experience in West Champaran','https://commons.wikimedia.org/wiki/Special:Redirect/file/Valmiki_Tiger_Reserve.jpg'],
+['Bihar','Takht Sri Patna Sahib','Important Sikh pilgrimage site in Patna','https://commons.wikimedia.org/wiki/Special:Redirect/file/Patna_Sahib_Gurudwara.jpg'],
+['Bihar','Golghar, Patna','Iconic historic granary and city landmark','https://commons.wikimedia.org/wiki/Special:Redirect/file/Golghar%2C_Patna.jpg'],
+['Bihar','Mandar Hill, Banka','Hill, sacred lake and heritage landscape at Bounsi','https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_b/banka/mandar_hill/nature_banka_category_b_mandar_hill_pic_02.jpg'],
+['Jharkhand','Deoghar','Temple city and regional pilgrimage destination','https://commons.wikimedia.org/wiki/Special:Redirect/file/Baidyanath_Temple.jpg'],
+['Jharkhand','Basukinath','Important Shiva pilgrimage destination','https://commons.wikimedia.org/wiki/Special:Redirect/file/Basukinath_Temple.jpg'],
+['Jharkhand','Trikut Pahar','Hill and ropeway destination near Deoghar','https://commons.wikimedia.org/wiki/Special:Redirect/file/Trikut_Pahar.jpg'],
+['Jharkhand','Dumka','Regional cultural and natural destination','https://commons.wikimedia.org/wiki/Special:Redirect/file/Dumka.jpg'],
+['Jharkhand','Dapat Pani Hot Spring','Natural hot spring destination','https://commons.wikimedia.org/wiki/Special:Redirect/file/Dapat_Pani_Hot_Spring.jpg'],
+['Jharkhand','Thariapani Hot Spring, Dumka','Hot-spring stop on the Dumka–Pakur route near Gopikandar','https://commons.wikimedia.org/wiki/Special:Redirect/file/Thariapani_Hot_Spring.jpg'],
+['Jharkhand','Hizla, Dumka','Mayurakshi riverside landscape and tribal cultural area','https://commons.wikimedia.org/wiki/Special:Redirect/file/Hizla_Dumka.jpg'],
+['Jharkhand','Rajmahal Hills, Sahibganj','Historic hill range, forests and scenic viewpoints','https://commons.wikimedia.org/wiki/Special:Redirect/file/Rajmahal_Hills.jpg'],
+['Jharkhand','Moti Jharna, Sahibganj','Natural waterfall/stream near Maharajpur, sourced from Rajmahal Hills','https://commons.wikimedia.org/wiki/Special:Redirect/file/Moti_Jharna_Sahibganj.jpg'],
+['Jharkhand','Udhwa Lake Bird Sanctuary, Sahibganj','Wetland sanctuary and migratory-bird habitat','https://commons.wikimedia.org/wiki/Special:Redirect/file/Udhwa_Lake_Bird_Sanctuary.jpg'],
+['Jharkhand','Teliagarhi Fort, Sahibganj','Historic gateway and heritage landscape of Rajmahal region','https://commons.wikimedia.org/wiki/Special:Redirect/file/Teliagarhi_Fort.jpg'],
+['Jharkhand','Rajmahal, Sahibganj','Historic town on the Ganga with hills and heritage sites','https://commons.wikimedia.org/wiki/Special:Redirect/file/Rajmahal_Jharkhand.jpg'],
+['Jharkhand','Luguburu Ghantabari, Bokaro','Santhal sacred hill, forest and waterfall landscape','https://commons.wikimedia.org/wiki/Special:Redirect/file/Luguburu_Ghantabari.jpg'],
+['Jharkhand','Parasnath / Sammed Shikharji','Sacred Jain pilgrimage hill','https://commons.wikimedia.org/wiki/Special:Redirect/file/Parasnath_Hill.jpg'],
+['Jharkhand','Hundru Falls, Ranchi','Spectacular waterfall on the Subarnarekha','https://commons.wikimedia.org/wiki/Special:Redirect/file/Hundru_Falls.jpg'],
+['Jharkhand','Dassam Falls','Waterfall and nature destination near Ranchi','https://commons.wikimedia.org/wiki/Special:Redirect/file/Dassam_Falls.jpg'],
+['Jharkhand','Jonha Falls','Forest waterfall and scenic outing','https://commons.wikimedia.org/wiki/Special:Redirect/file/Jonha_Falls.jpg'],
+['Jharkhand','Netarhat','Hill station, sunrise and sunset viewpoints','https://commons.wikimedia.org/wiki/Special:Redirect/file/Netarhat.jpg'],
+['Jharkhand','Betla National Park','Wildlife, forest, waterfalls and Chero fort region','https://commons.wikimedia.org/wiki/Special:Redirect/file/Betla_National_Park.jpg'],
+['Jharkhand','Rajrappa Temple','Chhinnamasta temple and river confluence','https://commons.wikimedia.org/wiki/Special:Redirect/file/Rajrappa_Temple.jpg']
+];
+
+let currentFilter='all';
+let selected=[];
+
+function allowed(){
+const [d,p,n]=document.getElementById('plan').value.split('|').map(Number);
+const people=Number(document.getElementById('persons').value);
+return n*people;
+}
+
+function renderTours(){
+const g=document.getElementById('tourGrid');
+g.innerHTML='';
+const list=currentFilter==='all'?tours:tours.filter(x=>x[0]===currentFilter);
+
+list.forEach((t)=>{
+const i=tours.indexOf(t);
+const a=document.createElement('div');
+a.className='tour-card';
+a.innerHTML=`<img src="${t[3]}" alt="${t[1]}" loading="lazy"><div class="tour-card-body"><small>${t[0]}</small><h3>${t[1]}</h3><p>${t[2]}</p><button class="btn ${selected.includes(i)?'green':''}" onclick="toggleTour(${i})">${selected.includes(i)?'✓ Selected':'Select This Site'}</button></div>`;
+g.appendChild(a);
+});
+
+document.getElementById('allowedCount').textContent=allowed();
+document.getElementById('selectedCount').textContent=selected.length;
+document.getElementById('sites').value=selected.map(i=>tours[i][1]).join('\n');
+}
+
+function toggleTour(i){
+const max=allowed();
+if(selected.includes(i)){
+selected=selected.filter(x=>x!==i);
+}else{
+if(selected.length>=max){
+alert('Your current booking allows '+max+' complimentary tour site(s).');
+return;
+}
+selected.push(i);
+}
+renderTours();
+}
+
+function filterTours(f,b){
+currentFilter=f;
+document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));
+b.classList.add('active');
+renderTours();
+}
+
+function updateCalc(){
+const [d,p,n]=document.getElementById('plan').value.split('|').map(Number);
+const people=Number(document.getElementById('persons').value);
+const rates={1:0,2:.10,3:.15,4:.20,5:.25};
+const base=p*people;
+const disc=base*rates[people];
+
+document.getElementById('baseTotal').textContent='₹'+base.toLocaleString('en-IN');
+document.getElementById('discount').textContent='− ₹'+disc.toLocaleString('en-IN');
+document.getElementById('grandTotal').textContent='₹'+(base-disc).toLocaleString('en-IN');
+document.getElementById('tourAllowance').textContent=n*people;
+
+while(selected.length>n*people)selected.pop();
+renderTours();
+}
+
+function goBooking(){
+document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+}
+
+function sendBooking(e){
+e.preventDefault();
+
+const [d,p,n]=document.getElementById('plan').value.split('|').map(Number);
+const people=Number(document.getElementById('persons').value);
+const rates={1:0,2:.10,3:.15,4:.20,5:.25};
+const total=p*people*(1-rates[people]);
+
+const msg=`Hello SKILLED VIHARI FARMSTAY,
+
+FARMSTAY BOOKING REQUEST
+Name: ${document.getElementById('name').value}
+Mobile: ${document.getElementById('phone').value}
+Plan: ${document.getElementById('plan').selectedOptions[0].text}
+Persons: ${people}
+Check-in: ${document.getElementById('date').value}
+Check-out: ${document.getElementById('checkout').value}
+Selected free-tour sites (${selected.length}/${n*people}):
+${selected.map(i=>'- '+tours[i][1]+' ('+tours[i][0]+')').join('\n')||'- To be selected'}
+Indicative farmstay total after group discount: ₹${total.toLocaleString('en-IN')}
+Additional request: ${document.getElementById('message').value}
+
+Please confirm availability, routing, driver-guide vehicle, fuel charges and any other applicable charges.`;
+
+window.open('https://wa.me/917762918733?text='+encodeURIComponent(msg),'_blank');
+}
+
+renderTours();
+updateCalc();
+</script>
+
+</body>
+</html>
