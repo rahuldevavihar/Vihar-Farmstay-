@@ -1,4 +1,4 @@
-name: Build VIHAR FARMSTAY APK
+name: Build SKILLED VIHARI FARMSTAY APK
 
 on:
   workflow_dispatch:
@@ -65,7 +65,7 @@ jobs:
               }
           }
 
-          rootProject.name = "ViharFarmstay"
+          rootProject.name = "SkilledvihariFarmstay"
           include(":app")
           EOF
 
