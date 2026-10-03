@@ -1,4 +1,4 @@
-name: Build SKILLED VIHARI FARMSTAY APK
+name: Build  VIHAR STAY APK
 
 on:
   workflow_dispatch:
@@ -65,7 +65,7 @@ jobs:
               }
           }
 
-          rootProject.name = "SkilledvihariFarmstay"
+          rootProject.name = "viharstay"
           include(":app")
           EOF
 
@@ -87,11 +87,11 @@ jobs:
           }
 
           android {
-              namespace "com.skilledviharifarmstay.app"
+              namespace "com.viharstay.app"
               compileSdk 35
 
               defaultConfig {
-                  applicationId "com.skilledviharifarmstay.app"
+                  applicationId "com.viharstay.app"
                   minSdk 23
                   targetSdk 35
                   versionCode 1
@@ -121,7 +121,7 @@ jobs:
 
               <application
                   android:allowBackup="true"
-                  android:label="SKILLED VIHARI FARMSTAY"
+                  android:label="VIHAR STAY"
                   android:supportsRtl="true"
                   android:theme="@style/AppTheme">
 
@@ -141,7 +141,7 @@ jobs:
           </manifest>
           EOF
 
-          cat > android/app/src/main/java/com/viharfarmstay/app/MainActivity.java <<'EOF'
+          cat > android/app/src/main/java/com/viharstay/app/MainActivity.java <<'EOF'
           package com.viharfarmstay.app;
 
           import android.app.Activity;
@@ -222,10 +222,10 @@ jobs:
         run: |
           mkdir -p output
           cp android/app/build/outputs/apk/debug/app-debug.apk \
-             output/SKILLED-VIHARI-FARMSTAY.apk
+             output/VIHAR-STAY.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: SKILLED-VIHARI-FARMSTAY-APK
-          path: output/SKILLED-VIHARI-FARMSTAY.apk
+          name: VIHAR-STAY-APK
+          path: output/VIHAR-STAY.apk
